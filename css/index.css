@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+.checked { color: orange; }
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 30px;
+    font-family: "Poppins";
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+.navbar a {
+    color: rgb(53, 52, 52);
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.nav-item {
+    margin: 0px 10px;
+}
+
+main {
+    margin: auto;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 28px auto;
+    font-family: "Raleway";
+    margin-top: 28px;
+    padding: 0px 20px;
+}
+.btn-border {
+    border: 1px solid rgb(228, 239, 243);
+}
+.btn-left {
+    background-color: rgb(224, 230, 253);
+}
+.button-group img {
+    width: 20px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.listings-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0px 30px;
+    font-family: "Raleway";
+}
+.listing-left {
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0px;
+}
+.listing-left img {
+    width: 100%;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+.listing-container {
+    margin: 30px 0px;
+}
+.listing {
+    cursor: pointer;
+}
+#listing1:hover #listing-left-1>img {
+    transform: scale(1.1);
+}
+#listing2:hover #listing-left-2>img {
+    transform: scale(1.1);
+}
+#listing3:hover #listing-left-3>img {
+    transform: scale(1.1);
+}
+#listing4:hover #listing-left-4>img {
+    transform: scale(1.1);
+}
+.listing-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.listing-address {
+    color: rgb(61, 61, 61);
+}
+.listing-rating {
+    margin: 8px 0px;
+}
+.listing-description {
+    color: rgb(88, 88, 88);
+}
+.listing-price {
+    margin-top: 8px;
+    font-family: "Poppins";
+}
+
+.paginator {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    font-family: "Poppins";
+}
+.page {
+    display: inline-block;
+    margin: 0px 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.page-prev  {
+    margin: 0px 30px;
+    color: grey;
+}
+.page-next {
+    margin: 0px 30px;
+}
+#prev, #next {
+    display: inline-block;
+    transition: 0.3s;
+}
+.page-next:hover #next {
+    transform: translateX(5px) scale(1.4);
+}
+.page-item {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    line-height: 1.73;
+    border: 1px solid transparent;
+}
+.page-item:hover {
+    border: 1px solid teal;
+}
+.page-selected {
+    color: white;
+    background-color: rgb(0, 92, 128);
+    box-shadow: 0px 2px 5px 1px silver;
+}
+
+.section-cust {
+    background: url("../images/section.jpg");
+    padding: 40px 20px;
+    font-family: "Poppins";
+    box-shadow: 0px 0px 10px 2px rgb(169, 186, 197) inset;
+    margin: 50px 0px;
+}
+.section-cust .row {
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+}
+.section-heading {
+    font-size: 1.3rem;
+    text-align: left;
+    color: rgb(14, 44, 56);
+}
+.section-button {
+    text-align: right;
+}
+.btn-cust {
+    border: 1px solid rgb(136, 158, 179);
+    padding: 10px 15px;
+    transition: 0.3s;
+    letter-spacing: 1.2px;
+}
+.btn-cust:hover {
+    color: white;
+    background-color: rgb(70, 101, 158);
+    box-shadow: 0px 4px 8px 2px rgba(53, 83, 126, 0.288);
+    transform: translateY(-5px);
+}
+
+@media(max-width: 576px){
+    .listing-right {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 786px){
+    .navbar-nav {
+        padding: 20px 0px;
+    }
+    .search-item {
+        margin-bottom: 10px;
+    }
+    .navigation {
+        margin-top: 0px;
+    }
+    .section-heading, .section-button {
+        text-align: center;
+    }
+    .section-button {
+        margin-top: 20px;
+    }
+}
