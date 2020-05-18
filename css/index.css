@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 .checked { color: orange; }
 
 html, body{
@@ -19,7 +20,13 @@ html, body{
     padding: 0px 10px;
 }
 .navbar a {
-    color: rgb(53, 52, 52);
+    color: rgb(73, 72, 72);
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+}
+.navbar a:hover {
+    color: black;
+    border-bottom: 1px solid rgb(204, 202, 202);
 }
 .navbar-collapse {
     justify-content: flex-end;
@@ -180,6 +187,71 @@ main {
     transform: translateY(-5px);
 }
 
+.section-contact {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-image: url(../images/contact_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 80px;
+    font-family: "Open Sans";
+}
+.contact {
+    max-width: 1000px;
+    margin:30px auto;
+    text-align: center;
+}
+.contact-heading {
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.contact-des {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: grey
+}
+.contact-form {
+    margin: auto;
+    padding: 40px 0px;
+    max-width: 400px;
+}
+
+.section-footer {
+    padding: 90px 20px;
+    box-shadow: 0px 0px 10px 2px rgb(169, 186, 197) inset;
+    font-family: "Poppins";
+    background: url("../images/section.jpg");
+    background-position: bottom;
+}
+.section-footer .row {
+    margin: auto;
+    max-width: 1300px;
+}
+.footer-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.footer-address {
+    color: rgb(255, 255, 255);
+}
+.section-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 30px;
+}
+.section-footer li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(228, 235, 243);
+    color: rgb(50, 53, 54);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.section-footer li:hover {
+    border-bottom: 1px solid rgb(7, 69, 116);
+}
+
 @media(max-width: 576px){
     .listing-right {
         margin-top: 20px;
@@ -201,5 +273,8 @@ main {
     }
     .section-button {
         margin-top: 20px;
+    }
+    .section-footer ul {
+        margin-top: 30px;
     }
 }
