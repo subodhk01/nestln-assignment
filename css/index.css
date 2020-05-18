@@ -125,11 +125,19 @@ main {
     transition: 0.5s;
 }
 .page-prev  {
-    margin: 0px 30px;
+    margin: 0px 30px 0px 0px;
     color: grey;
 }
 .page-next {
-    margin: 0px 30px;
+    margin: 0px 0px 0px 30px;
+}
+@media (max-width: 355px){
+    .page-prev  {
+        display: none;
+    }
+    .page-next {
+        margin: 0px 0px 0px 10px;
+    }
 }
 #prev, #next {
     display: inline-block;
@@ -213,7 +221,7 @@ main {
 }
 .contact-form {
     margin: auto;
-    padding: 40px 0px;
+    padding: 40px 20px;
     max-width: 400px;
 }
 
